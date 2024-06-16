@@ -29,3 +29,8 @@ form{
     border: 2px solid yellowgreen;
     padding: 15px;
 }
+.g-recaptcha{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}

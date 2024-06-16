@@ -6,6 +6,7 @@
     <title>web to lead form</title>
     <link rel = "stylesheet" href ="lead.css"></link>
     <script src="logic.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
  <h1> Create lead </h1>
@@ -15,6 +16,11 @@
     
     <input type=hidden name="oid" value="00D5j00000DiZc8">
     <input type=hidden name="retURL" value="">
+    <input type=hidden name='captcha_settings'
+     value='{"keyname":"
+     leadform","fallback":"true",
+     "orgId":"00D5j00000DiZc8","ts":""}'>
+
     <input type=hidden
      name="lead_date__c"
      class="outputDate">
@@ -61,6 +67,8 @@
     required = "true"
     class =" inputDate"
     /><br>
+    <div class="g-recaptcha" 
+    data-sitekey="6Le7RfopAAAAAEOby_0y2HizBFDle-Z6mzKa-yuB"></div><br>
     <input class ="submit " type="submit" name="submit">
     
     </form>
